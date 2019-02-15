@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  WeatherChallangeApp
+
+  Created by Adam Bella on 2/14/19.
+  Copyright © 2019 Bella Ádám. All rights reserved.
+*/
+
+// MARK: - Error handling
+general_error = "General error";
+business_error = "Business error: %d";
+
+// MARK: - Forecast Scene
+screen.forecast.default_cell.min.desc = "min.";
+screen.forecast.default_cell.max.desc = "max.";
+screen.forecast.default_cell.current.desc = "current";
+screen.forecast.default_cell.humidity.desc = "humidity";
+screen.forecast.default_cell.pressure.desc = "pressure";

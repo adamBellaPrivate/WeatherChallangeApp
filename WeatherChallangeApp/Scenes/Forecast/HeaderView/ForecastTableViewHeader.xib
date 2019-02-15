@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastTableViewHeader" customModule="WeatherChallangeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="lblCityName" destination="10b-00-dcc" id="m8R-bB-4gV"/>
+                <outlet property="map" destination="EGO-pR-p59" id="4GS-9Q-R6Y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="10b-00-dcc">
+                    <rect key="frame" x="5" y="5" width="365" height="40"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGO-pR-p59">
+                    <rect key="frame" x="0.0" y="50" width="375" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Aor-Zc-So3"/>
+                    </constraints>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="10b-00-dcc" secondAttribute="trailing" constant="5" id="13M-tH-zhw"/>
+                <constraint firstItem="EGO-pR-p59" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="KHo-jL-z5l"/>
+                <constraint firstItem="EGO-pR-p59" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vtw-Or-rze"/>
+                <constraint firstItem="10b-00-dcc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="gVO-rK-vm4"/>
+                <constraint firstItem="EGO-pR-p59" firstAttribute="top" secondItem="10b-00-dcc" secondAttribute="bottom" constant="5" id="gjQ-Wu-cUj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EGO-pR-p59" secondAttribute="trailing" id="i9D-9o-rj7"/>
+                <constraint firstItem="10b-00-dcc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="ks1-2i-I4O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="37.600000000000001" y="48.575712143928037"/>
+        </view>
+    </objects>
+</document>
